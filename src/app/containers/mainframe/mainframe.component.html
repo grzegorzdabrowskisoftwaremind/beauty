@@ -1,0 +1,6 @@
+<app-topbar (navigate)="onNavigate($event)" (pagesAmount)="onPageAmount($event)" [page]="page"></app-topbar>
+<div class="container-fluid pt-4 d-block">
+
+  <app-carousel [page]="page" [itemsPerSlide]="pagesPerView" *ngIf="showCarousel"></app-carousel>
+
+</div>
